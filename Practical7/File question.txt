@@ -1,0 +1,3 @@
+Question: How has the relationship between the DALYs in China and the UK changed over time? Are they becoming more similar, less similar？
+rows: 49- 70 
+I wrote a code to calculate the differences between China's and UK's DALYs. then I plot it. It showed that the slope is negative, which meant that the difference is becoming less and less, meaning that the DALYs in the china and UK are becoming similar.
