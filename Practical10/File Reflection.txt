@@ -1,0 +1,11 @@
+This practical provided hands-on experience with stochastic SIR modeling, a valuable tool in epidemiology.
+SIR Model:
+Through the application of random function, I successfully simulated an SIR Model to simulate the most simplified version of epidemic spread.
+
+Vaccination Model:
+Adding a vaccination factor was interesting. I observed how varying vaccination percentages impacted the infection curve, providing a tangible example of herd immunity.
+
+2D Spatial Model:
+Transitioning to a 2D model added complexity. I learned about spatial effects, like local infection clusters, which the basic SIR model doesn't capture.
+
+The most challenge I met is to correctly show the plot of 2D spatial model because I didn't know how to show a series of plots in 1 file code.
