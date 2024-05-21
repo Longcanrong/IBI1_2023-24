@@ -1,0 +1,13 @@
+The BLOSUM62 score for human-mouse sequence alignment is: 3137.0
+The BLOSUM62 score for human-rat sequence alignment is: 3107.0
+The BLOSUM62 score for mouse-rat sequence alignment is: 3261.0
+The higher the score is, the more similar the sequences are.
+The percentage of identical amino acids for human-mouse sequence alignment is: 92.53968253968254 %
+The percentage of identical amino acids for human-rat sequence alignment is: 91.74603174603175 %
+The percentage of identical amino acids for mouse-rat sequence alignment is: 96.82539682539682 %
+Because the alignment scores are 3107.0 < 3137.0 < 3261.0
+
+So the conclusions are: 
+Mouse's sequence and rat's sequence are most closely related.
+Human's sequence is more closely related to mouse's than to rat's.
+Mouse is a better model organism for human.
