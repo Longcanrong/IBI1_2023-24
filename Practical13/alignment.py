@@ -15,16 +15,6 @@ df = pd.read_csv('BLOSUM62.csv', index_col=0, header=0)
 
 blosum62_matrix = df.to_dict('index')
 
-# def calculate_score(seq1, seq2, blosum62_matrix):
-#     score = 0
-#     min_len = min(len(seq1), len(seq2))
-#     # Ensure the two sequences are in the same length
-#     for i in range(min_len):
-#         aa1, aa2 = seq1[i], seq2[i]
-#         score += blosum62_matrix.get(aa1, {}).get(aa2, 0)
-#     # Define the calculate measures
-#     return score
-
 def calculate_score(seq1, seq2, blosum62_matrix):
     score = 0
     for aa1, aa2 in zip(seq1, seq2):
@@ -37,9 +27,19 @@ def calculate_identity(seq1, seq2):
 
 seq1 = read_sequence('SLC6A4_HUMAN.fa')
 seq2 = read_sequence('SLC6A4_MOUSE.fa')
+seq3 = read_sequence('SLC6A4_RAT.fa')
 
 score = calculate_score(seq1, seq2, blosum62_matrix)
 identity = calculate_identity(seq1, seq2)
+print(f"Alignment Score for Human-Mouse sequence: {score}")
+print(f"Percentage of Identity for Human-Mouse sequence: {identity}%")
 
-print(f"Alignment Score: {score}")
-print(f"Percentage of Identity: {identity}%")
+score = calculate_score(seq1, seq3, blosum62_matrix)
+identity = calculate_identity(seq1, seq3)
+print(f"Alignment Score for Human-Rat sequence: {score}")
+print(f"Percentage of Identity for Human-Rat sequence: {identity}%")
+
+score = calculate_score(seq2, seq3, blosum62_matrix)
+identity = calculate_identity(seq2, seq3)
+print(f"Alignment Score for Rat-Mouse sequence: {score}")
+print(f"Percentage of Identity for Rat-Mouse sequence: {identity}%")
